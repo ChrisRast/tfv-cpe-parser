@@ -14,15 +14,15 @@ export class Cpe {
         this.target_hw = '*';
         this.target_sw = '*';
         this.update = '*';
-        this.part = null;
-        this.product = null;
-        this.vendor = null;
-        this.version = null;
+        this.part = '';
+        this.product = '';
+        this.vendor = '';
+        this.version = '';
     }
 
     /**
      * Classification of enumeration.
-     * 
+     *
      * The value “a” is for a class of applications.
      * The value “o” is for a class of operating systems.
      * The value “h” is for a class of hardware devices.

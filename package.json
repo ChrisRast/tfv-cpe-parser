@@ -8,8 +8,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha -w ./test/**/*.spec.js",
-    "tsc": "./node_modules/.bin/tsc -w",
+    "test": "jest",
+    "typecheck": "tsc",
     "release": "./node_modules/.bin/rimraf ./dist && ./node_modules/.bin/tsc -p configs/tsconfig.release.json"
   },
   "keywords": [
@@ -24,13 +24,12 @@
   "author": "Jonathan Fasking",
   "license": "ISC",
   "devDependencies": {
-    "@types/chai": "^4.2.4",
-    "@types/mocha": "^5.2.7",
-    "@types/node": "^12.12.7",
-    "rimraf": "^3.0.0",
-    "chai": "^4.2.0",
-    "mocha": "^6.2.2",
-    "typescript": "^3.7.2"
+    "@types/jest": "^29.5.5",
+    "jest": "^29.7.0",
+    "prettier": "3.0.3",
+    "rimraf": "^5.0.5",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
   },
   "dependencies": {},
   "repository": {

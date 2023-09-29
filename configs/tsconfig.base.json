@@ -1,6 +1,7 @@
 {
     "compileOnSave": true,
     "compilerOptions": {
+        "strict": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "noImplicitAny": false,
@@ -9,7 +10,8 @@
         "forceConsistentCasingInFileNames": true,
         "typeRoots": [
             "../node_modules/@types"
-        ]
+        ],
+        "noEmit": true
     },
     "exclude": [
         "../node_modules"
